@@ -56,7 +56,7 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappMsg = encodeURIComponent("Hello Suvarna Jewellers! 👋 I'm browsing your website and would like to explore your latest collections. Could you please help me?");
+  const whatsappMsg = encodeURIComponent("Hello Pinky Jewellers! 👋 I'm browsing your website and would like to explore your latest collections. Could you please help me?");
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-6'}`}>
@@ -67,7 +67,7 @@ const Navbar = () => {
           className="flex flex-col group cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <span className="text-2xl md:text-3xl font-serif font-bold tracking-[0.2em] text-gold group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] transition-all">SUVARNA</span>
+          <span className="text-2xl md:text-3xl font-serif font-bold tracking-[0.2em] text-gold group-hover:drop-shadow-[0_0_8px_rgba(212,175,55,0.4)] transition-all">PINKY</span>
           <span className="text-[10px] tracking-[0.4em] text-white/50 font-bold -mt-1 uppercase">Jewellers</span>
         </motion.div>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
             </a>
           ))}
           <a 
-            href={`https://wa.me/919634072072?text=${whatsappMsg}`} 
+            href={`https://wa.me/919012312336?text=${whatsappMsg}`} 
             target="_blank" rel="noopener noreferrer"
             className="px-10 py-3 bg-gold-gradient text-black font-extrabold hover:scale-105 transition-all duration-500 rounded-full shadow-gold"
           >
@@ -114,7 +114,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a 
-                href={`https://wa.me/919634072072?text=${whatsappMsg}`} 
+                href={`https://wa.me/919012312336?text=${whatsappMsg}`} 
                 target="_blank" rel="noopener noreferrer"
                 className="py-5 bg-gold-gradient text-black font-bold uppercase tracking-widest rounded-2xl mt-4 shadow-xl"
               >
@@ -129,13 +129,13 @@ const Navbar = () => {
 };
 
 const Hero = () => {
-  const whatsappMsg = encodeURIComponent("Hello Suvarna Jewellers! 👋 I'm interested in a premium jewellery consultation as seen on your website.");
+  const whatsappMsg = encodeURIComponent("Hello Pinky Jewellers! 👋 I'm interested in a premium jewellery consultation as seen on your website.");
 
   return (
     <section id="home" className="relative h-screen min-h-[850px] w-full flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover scale-[1.05] brightness-[0.75]">
-          <source src="/assets/suvarna.mp4" type="video/mp4" />
+          <source src="/assets/pinky-jewellers.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80 backdrop-blur-[1px]"></div>
         <div className="absolute inset-0 hero-overlay"></div>
@@ -148,7 +148,7 @@ const Hero = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
           <span className="text-gold uppercase tracking-[0.8em] text-[10px] md:text-xs font-bold mb-10 block font-poppins drop-shadow-lg">
-            Est. 2009 • Dehradun Heritage
+            Est. 2009 • Nehrugram Dehradun
           </span>
           <h1 className="text-5xl md:text-[8.5vw] font-serif font-black mb-10 leading-[0.8] text-white tracking-tight uppercase text-shadow-premium">
             Dehradun’s <span className="text-gold italic font-playfair lowercase block md:inline drop-shadow-[0_0_15px_rgba(212,175,55,0.2)]">Most Trusted</span> <br /> Jeweller
@@ -161,7 +161,7 @@ const Hero = () => {
             <motion.a 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href={`https://wa.me/919634072072?text=${whatsappMsg}`}
+              href={`https://wa.me/919012312336?text=${whatsappMsg}`}
               target="_blank" rel="noopener noreferrer"
               className="w-full sm:w-auto px-14 py-6 bg-[#25D366] text-white font-black rounded-full transition-all flex items-center justify-center gap-4 shadow-[#25D366]/30 shadow-2xl hover:brightness-110 active:scale-95"
             >
@@ -224,7 +224,7 @@ const BridalCollection = () => {
               <div className="absolute bottom-12 left-8 right-8 flex flex-col items-center translate-y-6 group-hover:translate-y-0 transition-all duration-500">
                 <h3 className="text-2xl font-serif mb-6 text-center tracking-wide">{img.title}</h3>
                 <a 
-                  href={`https://wa.me/919634072072?text=${encodeURIComponent(`Hi Suvarna! 👋 I'm in love with your ${img.title} from the Bridal Collection. Could I get more details and pricing?`)}`}
+                  href={`https://wa.me/919012312336?text=${encodeURIComponent(`Hi Pinky! 👋 I'm in love with your ${img.title} from the Bridal Collection. Could I get more details and pricing?`)}`}
                   target="_blank" rel="noopener noreferrer"
                   className="px-8 py-4 bg-white/10 hover:bg-gold backdrop-blur-xl rounded-full text-[10px] font-bold uppercase tracking-widest transition-all hover:text-black border border-white/10"
                 >
@@ -242,7 +242,7 @@ const BridalCollection = () => {
 const ProductShowcase = () => {
   const categories = [
     { name: "Gold Jewellery", desc: "22kt BIS Hallmarked Purity", image: "/assets/Screenshot 2026-03-29 113536.png" },
-    { name: "Diamond Jewellery", desc: "Eternal Brilliance & Grace", image: "/assets/unnamed.jpg" },
+    { name: "Diamond Jewellery", desc: "Eternal Brilliance & Grace", image: "/assets/diamond-collection.png" },
     { name: "Mangalsutra", desc: "Heritage Meets Modernity", image: "/assets/Screenshot 2026-03-29 113553.png" },
     { name: "Bangles", desc: "Mastercrafted for Perfection", image: "/assets/Screenshot 2026-03-29 113514.png" }
   ];
@@ -274,7 +274,7 @@ const ProductShowcase = () => {
                 <h4 className="text-3xl font-serif mb-6 tracking-wide text-white group-hover:text-gold transition-colors">{cat.name}</h4>
                 <p className="text-white/40 text-[15px] mb-12 font-poppins leading-relaxed font-light">{cat.desc}</p>
                 <a 
-                  href={`https://wa.me/919634072072?text=${encodeURIComponent(`Hi Suvarna Jewellers! 👋 I saw your ${cat.name} collection on the website and would like to see some more designs in this category.`)}`}
+                  href={`https://wa.me/919012312336?text=${encodeURIComponent(`Hi Pinky Jewellers! 👋 I saw your ${cat.name} collection on the website and would like to see some more designs in this category.`)}`}
                   target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-6 text-gold font-bold uppercase tracking-[0.3em] text-[10px] group/link w-fit"
                 >
@@ -290,7 +290,7 @@ const ProductShowcase = () => {
 };
 
 const GoldSchemeSection = () => {
-  const whatsappMsg = encodeURIComponent("Hello Suvarna! 👋 I'm very interested in your 'Swarna Samridhi' Gold Scheme. Could you please explain how I can start my savings journey?");
+  const whatsappMsg = encodeURIComponent("Hello Pinky! 👋 I'm very interested in your 'Swarna Samridhi' Gold Scheme. Could you please explain how I can start my savings journey?");
   const steps = [
     { icon: <Calendar size={32} />, title: "Open Account", desc: "Start with monthly installments from ₹2,000." },
     { icon: <PiggyBank size={32} />, title: "11 Months Tenure", desc: "Choose your fixed amount for 11 installments." },
@@ -334,7 +334,7 @@ const GoldSchemeSection = () => {
                 <p className="text-white/50 font-poppins text-lg leading-relaxed italic border-l-2 border-gold/40 pl-8">
                   "Join our legacy plan and get 100% bonus on your final installment. Perfect for weddings or long-term wealth."
                 </p>
-                <a href={`https://wa.me/919634072072?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer"
+                <a href={`https://wa.me/919012312336?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-6 text-gold font-bold uppercase tracking-[0.4em] text-xs pt-8 border-t border-white/5 w-full hover:gap-10 transition-all font-poppins group"
                 >
                   Join the Scheme <ChevronRight size={20} className="group-hover:translate-x-2 transition-transform" />
@@ -350,7 +350,7 @@ const GoldSchemeSection = () => {
 
 const TrustSection = () => {
   const selectedReviews = [
-    { name: "Anshika Solanki", text: "Suvarna jewellers have some of the best designs in town. Staff is very friendly and well mannered.", line: "Best jewellery store in town" },
+    { name: "Anshika Solanki", text: "Pinky jewellers have some of the best designs in town. Staff is very friendly and well mannered.", line: "Best jewellery store in town" },
     { name: "Sudhir Gusain", text: "I must say, I am thoroughly impressed! The design is elegant and timeless.", line: "Unmatched Craftsmanship" },
     { name: "Yogini Aisha", text: "Designs are breathtaking, stunning piece, quality is top notch. Highly recommended.", line: "Elegant designs and great service" }
   ];
@@ -394,7 +394,7 @@ const TrustSection = () => {
 };
 
 const VisitStore = () => {
-  const whatsappMsg = encodeURIComponent("Hello Suvarna Jewellers! 👋 I'm planning to visit your store from the website. Could you please confirm the current status?");
+  const whatsappMsg = encodeURIComponent("Hello Pinky Jewellers! 👋 I'm planning to visit your store from the website. Could you please confirm the current status?");
 
   return (
     <section id="visit" className="py-40 bg-black text-white relative">
@@ -417,7 +417,7 @@ const VisitStore = () => {
                   </div>
                   <div>
                     <h5 className="font-bold text-xs uppercase tracking-[0.4em] text-gold mb-4 font-serif">Location</h5>
-                    <p className="text-white/70 text-xl leading-relaxed font-light font-poppins">Raipur Chowk, Chaki No.4, <br /> Near PNB Bank, Dehradun</p>
+                    <p className="text-white/70 text-xl leading-relaxed font-light font-poppins">Near St. Johns Academy, <br /> zzlower Nehrugram Dehradun</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
@@ -426,7 +426,7 @@ const VisitStore = () => {
                   </div>
                   <div>
                     <h5 className="font-bold text-xs uppercase tracking-[0.4em] text-gold mb-4 font-serif">Contact</h5>
-                    <p className="text-white/70 text-xl font-light font-poppins leading-none">+91 96340 72072</p>
+                    <p className="text-white/70 text-xl font-light font-poppins leading-none">+91 90123 12336</p>
                   </div>
                 </div>
               </div>
@@ -441,12 +441,12 @@ const VisitStore = () => {
                   </div>
                 </div>
                 <div className="mt-8 flex flex-col gap-6">
-                  <a href="https://www.google.com/maps/search/Suvarna+Jewellers+Raipur+Dehradun" target="_blank" rel="noopener noreferrer"
+                  <a href="https://www.google.com/maps/search/Pinky+Jewellers+Nehrugram+Dehradun" target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-between gap-6 px-10 py-6 bg-gold-gradient text-black rounded-[1.5rem] hover:scale-105 transition-all font-black text-xs uppercase tracking-[0.3em] shadow-[0_15px_40px_rgba(212,175,55,0.3)] active:scale-95"
                   >
                     View Map <ExternalLink size={20} />
                   </a>
-                  <a href={`https://wa.me/919634072072?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer"
+                  <a href={`https://wa.me/919012312336?text=${whatsappMsg}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center justify-center gap-4 py-4 border border-white/10 rounded-2xl text-[10px] uppercase font-bold tracking-widest text-white/40 hover:text-gold transition-all hover:bg-white/5"
                   >
                     Notify Visit <Zap size={16} className="text-gold" />
@@ -460,7 +460,7 @@ const VisitStore = () => {
             <div className="absolute -inset-12 bg-gold/5 rounded-full blur-[90px] group-hover:bg-gold/10 transition-colors duration-1000"></div>
             <div className="relative h-[750px] rounded-[4rem] border-2 border-gold/10 overflow-hidden shadow-[0_40px_120px_rgba(0,0,0,0.6)]">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.646864197471!2d78.0434446!3d30.3013217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c293701265%3A0xc3f60879ee908bf4!2sSuvarna%20Jewellers!5e0!3m2!1sen!2sin!4v1711681234567!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.646864197471!2d78.0434446!3d30.3013217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c293701265%3A0xc3f60879ee908bf4!2sPinky%20Jewellers!5e0!3m2!1sen!2sin!4v1711681234567!5m2!1sen!2sin" 
                 className="w-full h-full grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-[2s] contrast-125 brightness-[0.9] hover:brightness-100 placeholder-gold" 
                 style={{ border: 0 }} allowFullScreen="" loading="lazy"
               ></iframe>
@@ -478,7 +478,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
         <div className="flex flex-col md:flex-row justify-between items-center gap-24 mb-32">
           <div className="group cursor-default">
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-gold tracking-[0.4em] mb-6 uppercase drop-shadow-lg group-hover:brightness-125 transition-all">SUVARNA</h2>
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-gold tracking-[0.4em] mb-6 uppercase drop-shadow-lg group-hover:brightness-125 transition-all">PINKY</h2>
             <p className="text-white/20 text-[12px] uppercase tracking-[0.6em] font-bold font-poppins">Crafted with honor since 2009</p>
           </div>
           <div className="flex gap-16">
@@ -492,12 +492,12 @@ const Footer = () => {
             </a>
           </div>
           <div className="font-poppins text-center md:text-right">
-            <p className="text-white/40 text-xl font-light leading-relaxed">Raipur Chowk, Chaki No.4, <br /> Near PNB, Dehradun</p>
+            <p className="text-white/40 text-xl font-light leading-relaxed">Near St. Johns Academy, <br /> zzlower Nehrugram Dehradun</p>
             <p className="text-gold font-bold tracking-[0.6em] mt-8 uppercase text-[12px]">Dehradun, Uttarakhand</p>
           </div>
         </div>
         <div className="pt-20 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-12 opacity-20 text-[11px] uppercase tracking-[0.5em] font-bold">
-          <p>© 2024 Suvarna Jewellers. All Rights Reserved.</p>
+          <p>© 2024 Pinky Jewellers. All Rights Reserved.</p>
           <div className="flex gap-16">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
@@ -509,7 +509,7 @@ const Footer = () => {
 };
 
 const App = () => {
-  const whatsappUniversal = `https://wa.me/919634072072?text=${encodeURIComponent("Hello Suvarna Jewellers! 👋 I'm browsing your premium collection on the website and would like some assistance with designs and pricing.")}`;
+  const whatsappUniversal = `https://wa.me/919012312336?text=${encodeURIComponent("Hello Pinky Jewellers! 👋 I'm browsing your premium collection on the website and would like some assistance with designs and pricing.")}`;
 
   return (
     <div className="bg-black selection:bg-gold selection:text-black">
@@ -571,7 +571,7 @@ const App = () => {
       </motion.a>
 
       <div className="fixed bottom-0 left-0 w-full bg-black/90 backdrop-blur-3xl border-t border-gold/20 z-[90] flex md:hidden items-center justify-between p-6 px-16 rounded-t-[3rem] shadow-[0_-15px_60px_rgba(0,0,0,0.6)]">
-        <a href="tel:+919634072072" className="flex flex-col items-center gap-3 active:scale-125 transition-transform group">
+        <a href="tel:+919012312336" className="flex flex-col items-center gap-3 active:scale-125 transition-transform group">
           <Phone size={28} className="text-gold" />
           <span className="text-[10px] uppercase font-black tracking-[0.2em] text-white/50 group-active:text-gold">Call</span>
         </a>
