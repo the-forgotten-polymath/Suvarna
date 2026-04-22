@@ -8,19 +8,19 @@ export const REVIEWS = [
   {
     name: "Anshika Solanki",
     rating: 5,
-    text: "Suvarna jewellers have some of the best designs in town. Staff is very friendly and well mannered. Specially Swarnima mam is very sweet and has helped me a lot throughout my jewellery shopping.",
+    text: "Pinky jewellers have some of the best designs in town. Staff is very friendly and well mannered. Specially Swarnima mam is very sweet and has helped me a lot throughout my jewellery shopping.",
     time: "3 months ago"
   },
   {
     name: "Sudhir Gusain",
     rating: 5,
-    text: "I recently bought a mangalsutra from Suvarna Jewellers, and I must say, I am thoroughly impressed! The design is elegant and timeless, with beautiful detailing that makes it a perfect blend of traditional and modern.",
+    text: "I recently bought a mangalsutra from Pinky Jewellers, and I must say, I am thoroughly impressed! The design is elegant and timeless, with beautiful detailing that makes it a perfect blend of traditional and modern.",
     time: "a year ago"
   },
   {
     name: "Aarohi Negi",
     rating: 5,
-    text: "I visited suvarna jewellers they have elegant design of all jewellery. I bought many jewellery like mangalsutra, Chain etc. Must visit.",
+    text: "I visited Pinky jewellers they have elegant design of all jewellery. I bought many jewellery like mangalsutra, Chain etc. Must visit.",
     time: "6 months ago"
   },
   {
@@ -32,7 +32,7 @@ export const REVIEWS = [
   {
     name: "Mukesh Bhandari",
     rating: 5,
-    text: "Suvarna is a place to rely upon when it comes to buy gold with reliability. Got prepared nath as per my requirement and design, excellent outcome.",
+    text: "Pinky is a place to rely upon when it comes to buy gold with reliability. Got prepared nath as per my requirement and design, excellent outcome.",
     time: "a year ago"
   },
   {
@@ -44,13 +44,13 @@ export const REVIEWS = [
   {
     name: "Surendra Singh",
     rating: 5,
-    text: "I am a very regular customer of suvarna Jewellers since 2023 and every time they surprise me with their improvement in design, service and hospitality. A place to trust.",
+    text: "I am a very regular customer of Pinky Jewellers since 2023 and every time they surprise me with their improvement in design, service and hospitality. A place to trust.",
     time: "a year ago"
   },
   {
     name: "Savita Chand",
     rating: 5,
-    text: "Had great shopping experience with Suvarna jewellers. They have variety of designs and staff behaviour is very helpful. Swarnima helped me with selection.",
+    text: "Had great shopping experience with Pinky jewellers. They have variety of designs and staff behaviour is very helpful. Swarnima helped me with selection.",
     time: "6 months ago"
   },
   {
